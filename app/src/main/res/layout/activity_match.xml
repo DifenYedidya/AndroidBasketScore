@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchActivity">
+
+    <TextView
+        android:id="@+id/txt_team1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Team 1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txt_team2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_team2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Team 2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/txt_team1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_score_team1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/txt_team1"
+        app:layout_constraintRight_toRightOf="@id/txt_team1"
+        app:layout_constraintTop_toBottomOf="@id/txt_team1" />
+
+    <TextView
+        android:id="@+id/txt_score_team2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/txt_team2"
+        app:layout_constraintRight_toRightOf="@id/txt_team2"
+        app:layout_constraintTop_toBottomOf="@id/txt_team2" />
+
+    <Button
+        android:id="@+id/btn_team1_one"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="plus1Team1"
+        android:text="+1"
+        app:layout_constraintLeft_toLeftOf="@id/txt_team1"
+        app:layout_constraintRight_toRightOf="@id/txt_team1"
+        app:layout_constraintTop_toBottomOf="@id/txt_score_team1" />
+
+    <Button
+        android:id="@+id/btn_team1_two"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="plus2Team1"
+        android:text="+2"
+        app:layout_constraintLeft_toLeftOf="@id/txt_team1"
+        app:layout_constraintRight_toRightOf="@id/txt_team1"
+        app:layout_constraintTop_toBottomOf="@id/btn_team1_one" />
+
+    <Button
+        android:id="@+id/btn_team1_three"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="plus3Team1"
+        android:text="+3"
+        app:layout_constraintLeft_toLeftOf="@id/txt_team1"
+        app:layout_constraintRight_toRightOf="@id/txt_team1"
+        app:layout_constraintTop_toBottomOf="@id/btn_team1_two" />
+
+    <Button
+        android:id="@+id/btn_team2_one"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="plus1Team2"
+        android:text="+1"
+        app:layout_constraintLeft_toLeftOf="@id/txt_team2"
+        app:layout_constraintRight_toRightOf="@id/txt_team2"
+        app:layout_constraintTop_toBottomOf="@id/txt_score_team2" />
+
+    <Button
+        android:id="@+id/btn_team2_two"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="plus2Team2"
+        android:text="+2"
+        app:layout_constraintLeft_toLeftOf="@id/txt_team2"
+        app:layout_constraintRight_toRightOf="@id/txt_team2"
+        app:layout_constraintTop_toBottomOf="@id/btn_team2_one" />
+
+    <Button
+        android:id="@+id/btn_team2_three"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="plus3Team2"
+        android:text="+3"
+        app:layout_constraintLeft_toLeftOf="@id/txt_team2"
+        app:layout_constraintRight_toRightOf="@id/txt_team2"
+        app:layout_constraintTop_toBottomOf="@id/btn_team2_two" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finish Match"
+        android:id="@+id/btn_match_finish"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
